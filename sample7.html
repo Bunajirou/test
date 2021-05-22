@@ -8,7 +8,31 @@
     <script>
         var month;
         month = prompt("月を入力してください", 1);
-
+        month = Number(month);
+        switch(month){
+            case 12:
+            case 1:
+            case 2:
+                document.write("<h1>冬</h1>");
+                break;
+            case 3:
+            case 4:
+            case 5:
+                document.write("<h1>春</h1>");
+                break;
+            case 6:
+            case 7:
+            case 8:
+                document.write("<h1>夏</h1>");
+                break;
+            case 9:
+            case 10:
+            case 11:
+                document.write("<h1>秋</h1>");
+                break;
+            default:
+                document.write("<h1>1から12までの値を入力してください</h1>");
+        }
     </script>
 </body>
 </html>
